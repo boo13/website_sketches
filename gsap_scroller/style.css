@@ -1,0 +1,106 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: black;
+  overflow-x: hidden;
+}
+
+div {
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  line-height: 100vh;
+}
+
+.snap {
+  display: block;
+  width: 100%;
+  background: #333;
+  height: 100vh;
+}
+
+.snap:nth-of-type(3) {
+  background: orange;
+}
+
+.snap:nth-of-type(4) {
+  background: teal;
+}
+
+.snap:nth-of-type(5) {
+  background: rebeccapurple;
+}
+
+.regular {
+  background: -webkit-gradient(linear, left top, left bottom, from(red), to(blue));
+  background: linear-gradient(red, blue);
+  min-height: 300vh;
+  width: 100vw;
+}
+
+.regular:nth-of-type(2) {
+  background: -webkit-gradient(linear, left top, left bottom, from(orange), to(purple));
+  background: linear-gradient(orange, purple);
+}
+
+.buttons-container {
+  padding: 2rem 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: left;
+  z-index: 2;
+}
+
+label {
+  display: block;
+}
+
+.container {
+  width: 80vw;
+  margin-left: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 200px;
+  height: 150px;
+  margin: 5px;
+}
+
+.logo {
+  position: absolute;
+  width: 60px;
+  bottom: 20px;
+  right: 30px;
+}
+
+.purple {
+  background-color: #7d4696;
+}
+
+.portfolio {
+  display: -ms-grid;
+  display: grid;
+}
+/*# sourceMappingURL=style.css.map */

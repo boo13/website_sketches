@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after
+{
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    height: 100vh;
+}
+
+/* Mobile version */
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 1fr 1fr 1fr 1fr 1%;
+
+    grid-template-areas: 
+        "header"
+        "sect1"
+        "sect2"
+        "sect3"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+    background-color: tomato;
+}
+
+section:nth-of-type(1) {
+    grid-area: sect1;
+    background-color: wheat;
+}
+
+section:nth-of-type(2) {
+    grid-area: sect2;
+    background-color: yellow;
+}
+
+section:nth-of-type(3) {
+    grid-area: sect3;
+    background-color: whitesmoke;
+}
+
+main {
+    grid-area: main;
+    background-color: azure;
+    margin: 5rem;
+}
+
+footer {
+    grid-area: footer;
+    background-color: chocolate;
+}
+
+/* For desktop displays */
+@media only screen and (min-width: 768px) {
+
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 25% auto 25%;
+        grid-template-rows: 8% 30% auto 1%;
+    
+        grid-template-areas: 
+            "header  header  header"
+            "sect1   sect2   sect3"
+            "main    main    main"
+            "footer  footer  footer";    
+    }
+
+}
